@@ -1,0 +1,11 @@
+double reference_fib(unsigned n)
+{
+  double a = 0., b = 1.;
+  while (n--)
+  {
+    const auto sum = a + b;
+    a = b;
+    b = sum;
+  }
+  return a;
+}
